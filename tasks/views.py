@@ -1,7 +1,12 @@
-from rest_framework import viewsets
-from rest_framework.permissions import IsAuthenticated
-from rest_framework.response import Response
-from .models import Task, TaskPermission
-from.serializers import TaskSerializer, TaskPermissionSerializer
+from django.shortcuts import render, get_object_or_404
+from .models import *
 
-# вереемся к задачам и их правам
+
+def task_list(request):
+    tasks = Task.objects.filter(creator=request.user)
+    return render(request, 'list.html', {'tasks': tasks})
+
+
+def task_detail(request, pk):
+    task = get_object_or_404(Task, pk=pk)
+    return render(request, 'detail.html', {'task': task})
