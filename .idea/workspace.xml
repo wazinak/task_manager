@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd10b063-92c5-498e-9829-0509919ec32e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tasks_api/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks_api/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks_api/permissions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_manager/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_manager/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task_manager/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_manager/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks_api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks_api/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks_api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks_api/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tasks_api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks_api/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>

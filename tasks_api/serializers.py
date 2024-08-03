@@ -1,14 +1,10 @@
 from rest_framework import serializers
-from tasks.models import Task, TaskPermission
+from tasks.models import Task
 
 
 class TaskSerializer(serializers.ModelSerializer):
+    creator = serializers.HiddenField(default=serializers.CurrentUserDefault())
+
     class Meta:
         model = Task
-        fields = '__all__'
-
-
-class TaskPermissionSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = TaskPermission
         fields = '__all__'

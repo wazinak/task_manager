@@ -1,37 +1,25 @@
-from rest_framework import mixins, generics
-from tasks.models import Task, TaskPermission
-from .serializers import TaskSerializer, TaskPermissionSerializer
+from rest_framework import generics, permissions
+from tasks.models import Task
+from .serializers import TaskSerializer
+from .permissions import IsOwnerOrReadOnly
 
 
-class TaskList(mixins.ListModelMixin,
-               mixins.CreateModelMixin,
-               generics.GenericAPIView):
+class TaskList(generics.ListCreateAPIView):
+    permission_classes = (IsOwnerOrReadOnly,)
     queryset = Task.objects.all()
     serializer_class = TaskSerializer
 
-    def get(self, request, *args, **kwargs):
-        return self.list(request, *args, **kwargs)
 
-    def post(self, request, *args, **kwargs):
-        return self.create(request, *args, **kwargs)
-
-
-class TaskDetail(mixins.RetrieveModelMixin,
-                 mixins.UpdateModelMixin,
-                 mixins.DestroyModelMixin,
-                 generics.GenericAPIView):
+class UserTasks(generics.ListAPIView):
     queryset = Task.objects.all()
     serializer_class = TaskSerializer
 
-    def get(self, request, *args, **kwargs):
-        return self.retrieve(request, *args, **kwargs)
+    def get_queryset(self):
+        user = self.request.user
+        return Task.objects.filter(creator=user)
 
-    def put(self, request, *args, **kwargs):
-        return self.update(request, *args, **kwargs)
 
-    def patch(self, request, *args, **kwargs):
-        return self.partial_update(request, *args, **kwargs)
-
-    def delete(self, request, *args, **kwargs):
-        return self.destroy(request, *args, **kwargs)
-
+class TaskDetail(generics.RetrieveUpdateDestroyAPIView):
+    permission_classes = (IsOwnerOrReadOnly,)
+    queryset = Task.objects.all()
+    serializer_class = TaskSerializer
