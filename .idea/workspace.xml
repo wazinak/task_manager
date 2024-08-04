@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd10b063-92c5-498e-9829-0509919ec32e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/schema.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks_api/permissions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task_manager/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_manager/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_manager/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_manager/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tasks_api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks_api/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks_api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks_api/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks_api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks_api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks_api/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks_api/tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,10 +53,34 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
+    "Python tests.Python tests for tests.TaskTestAPICase.test_get.executor": "Run",
+    "Python tests.Python tests in tests.py.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Python tests for tests.TaskTestAPICase.test_get" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="tast_manager" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tasks_api" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.TaskTestAPICase.test_get&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for tests.TaskTestAPICase.test_get" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
